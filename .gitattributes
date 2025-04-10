@@ -1,0 +1,9 @@
+* -text
+*.json eol=lf
+*.jsonc eol=lf
+*.json5 eol=lf
+*.md eol=lf
+*.ts eol=lf
+*.yml eol=lf
+LICENSE* eol=lf
+.* text eol=lf
