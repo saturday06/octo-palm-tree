@@ -16,6 +16,7 @@
     {
       customType: "jsonata",
       fileMatch: ["(^|/)deno.jsonc?$"],
+      fileFormat: "json",
       datasourceTemplate: "npm",
       matchStrings: [
         " \
