@@ -15,7 +15,7 @@
   customManagers: [
     {
       customType: "jsonata",
-      fileFormat: "json",
+      fileFormat: "jsonc",
       fileMatch: ["(^|/)deno.jsonc?$"],
       matchStrings: [
         " \
