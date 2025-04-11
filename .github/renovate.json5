@@ -15,8 +15,8 @@
   customManagers: [
     {
       customType: "jsonata",
-      fileFormat: "jsonc",
-      fileMatch: ["deno.jsonc$"],
+      fileFormat: "json",
+      fileMatch: ["(^|/)deno.jsonc?$"],
       matchStrings: [
         " \
           $each(imports, function($import) {( \
