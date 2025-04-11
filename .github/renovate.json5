@@ -12,4 +12,24 @@
       automerge: true,
     },
   ],
+  customManagers: [
+    {
+      customType: "jsonata",
+      fileFormat: "jsonc",
+      fileMatch: ["deno.jsonc$"],
+      matchStrings: [
+        " \
+          $each(imports, function($import) {( \
+            $groups := $match($import,/^(npm:)?(.+)@(.+?)$/).groups; \
+            $groups[0] ? { \
+              'depName': $groups[1], \
+              'currentValue': $groups[2], \
+              'datasource': 'npm', \
+              'versioning': 'npm' \
+            } \
+          )}) \
+        ",
+      ],
+    },
+  ]
 }
